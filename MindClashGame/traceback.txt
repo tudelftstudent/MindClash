@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 22, in script
-    jump Scenario_1
-ScriptError: could not find label 'Scenario_1'.
+  File "game/script.rpy", line 52, in script
+    $ save_input(text_input, "Scenario_1", "Random Choice")
+  File "game/script.rpy", line 52, in <module>
+    $ save_input(text_input, "Scenario_1", "Random Choice")
+  File "game/script.rpy", line 12, in save_input
+    with open("user_input.json",'r+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'user_input.json'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 22, in script
-    jump Scenario_1
-  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\ast.py", line 1992, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\script.py", line 1013, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'Scenario_1'.
+  File "game/script.rpy", line 52, in script
+    $ save_input(text_input, "Scenario_1", "Random Choice")
+  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 52, in <module>
+    $ save_input(text_input, "Scenario_1", "Random Choice")
+  File "game/script.rpy", line 12, in save_input
+    with open("user_input.json",'r+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'user_input.json'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.0.23051307
 MindClashGame 1.0
-Wed Jun  7 20:20:54 2023
+Wed Jun  7 23:52:10 2023

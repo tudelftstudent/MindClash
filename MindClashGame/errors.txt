@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 316: 'elif' is not a keyword argument or valid child of the vbox statement.
-    elif not main_menu:
-        ^
+File "game/script.rpy", line 52: invalid syntax
+    $ text_input = renpy.input("Testing:", copypaste = False) 
+     ^
 
 Ren'Py Version: Ren'Py 8.1.0.23051307
-Wed Jun  7 20:50:33 2023
+Wed Jun  7 22:43:38 2023
