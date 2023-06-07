@@ -1,4 +1,4 @@
-Fri Jun  2 20:30:37 2023
+Wed Jun  7 16:23:17 2023
 Windows-10-10.0.22621
 Ren'Py 8.1.0.23051307
  
@@ -22,7 +22,7 @@ Initial gc. took 0.01s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
+Creating interface object. took 0.17s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
