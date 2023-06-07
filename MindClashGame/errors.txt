@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 316: 'elif' is not a keyword argument or valid child of the vbox statement.
+    elif not main_menu:
+        ^
+
+Ren'Py Version: Ren'Py 8.1.0.23051307
+Wed Jun  7 20:50:33 2023

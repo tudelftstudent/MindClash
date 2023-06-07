@@ -303,17 +303,18 @@ screen navigation():
 
             textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            #textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        #textbutton _("Load") action ShowMenu("load")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
-        if _in_replay:
+        #if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            #textbutton _("End Replay") action EndReplay(confirm=True)
 
-        elif not main_menu:
+        #elif not main_menu:
+        if not main_menu:
 
             textbutton _("Main Menu") action MainMenu()
 

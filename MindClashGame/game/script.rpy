@@ -1,33 +1,38 @@
 ﻿# The script of the game goes in this file.
-
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define player = Character("Decision Maker")
-
-
+define player = Character("Decision Maker", color = "red")
+define developer = Character("...")
+define kendall = Character("Kendall")
+define jan = Character("Jan")
 # The game starts here.
 
 label start:
+    scene bg city
+    with fade
+    # The developer's beginning dialogue
+    developer "Welcome, my friend."
+    developer "You are invited, because we want you to make choices."
+    developer "We want to know why you make these choices."
+    developer "Your thought is crucial for us."
+    developer "Now let's start it."
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    menu:
+        "Continue":
+            jump Scenario_1
 
-    scene bg room
+label Scenario_1:
+    
+    developer "Now the story begins. You are going to make choices for Kendall and Jan."
+    $ renpy.pause() #Pause to create a gap
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    scene bg cafe
 
-    show eileen happy
+    ""
 
-    # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
 
-    # This ends the game.
 
-    return
+
