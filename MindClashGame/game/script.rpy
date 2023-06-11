@@ -137,13 +137,26 @@ label ending_1: #Ending: Clean Her Home
     "Kendall leaves the room without disturbing Jan's sleep. However, unbeknownst to Kendall, Jan wakes up briefly and notices his presence."
 
     scene bg breakfast table with dissolve
-    jan "(looking slightly distant) Kendall, can we talk about something?"
-    kendall "(concerned) Of course, Jan. What's on your mind?"
-    jan "(hesitant) Last night, when I woke up for a moment, I noticed you were in my room. I appreciate your intention to keep me warm, but it made me feel a bit ignored as if you didn't want to disturb me."
-    kendall "(apologetic) Jan, I'm so sorry if I gave you that impression. I truly didn't want to disrupt your sleep, thinking it would be better to let you rest peacefully. I never meant for you to feel ignored."
-    jan "(sadly) Kendall, it's not just about that one incident. Lately, I've been feeling like our connection has dissolved. We seem to have different priorities and our communication has suffered. I think it might be best if we go our separate ways."
-    kendall "(taken aback) Jan, I didn't realize you felt this way. I'm devastated to hear that you want to end our relationship, but I respect your decision."
-    jan "(teary-eyed) Kendall, it's not an easy decision for me either. We had some beautiful moments together, but it feels like we've grown apart. It's time for both of us to find our own happiness."
+    show jan hesitate at truecenter
+    jan "Kendall, can we talk about something?"
+    hide jan
+    show kendall concerned at truecenter
+    kendall "Of course, Jan. What's on your mind?"
+    hide kendall
+    show jan hesitate at truecenter
+    jan "Last night, when I woke up for a moment, I noticed you were in my room. I appreciate your intention to keep me warm, but it made me feel a bit ignored as if you didn't want to disturb me."
+    hide jan
+    show kendall frustrated at truecenter
+    kendall "Jan, I'm so sorry if I gave you that impression. I truly didn't want to disrupt your sleep, thinking it would be better to let you rest peacefully. I never meant for you to feel ignored."
+    hide kendall
+    show jan sad at truecenter
+    jan "Kendall, it's not just about that one incident. Lately, I've been feeling like our connection has dissolved. We seem to have different priorities and our communication has suffered. I think it might be best if we go our separate ways."
+    hide jan
+    show kendall concerned at truecenter
+    kendall "Jan, I didn't realize you felt this way. I'm devastated to hear that you want to end our relationship, but I respect your decision."
+    hide kendall
+    show jan tear eyed at truecenter
+    jan "Kendall, it's not an easy decision for me either. We had some beautiful moments together, but it feels like we've grown apart. It's time for both of us to find our own happiness."
     return 
 
 label ending_2:
@@ -155,10 +168,17 @@ label ending_2:
     #(Scene: Kendall and Jan spend quality time together, strengthening their bond.)
     scene bg warm home with dissolve
     "(Kendall and Jan spend quality time together, strengthening their bond.)"
-    kendall "(smiling) Jan, I wanted to make sure you felt warm and comfortable. Your well-being means everything to me."
-    jan "(grateful) Kendall, your thoughtfulness never fails to touch my heart. It's moments like these that remind me how lucky I am to have you in my life."
-    kendall "(gently takes Jan's hand) Jan, being with you feels like home. You bring so much joy and warmth into my life. I can't imagine my days without you by my side."
-    jan "(blushing) Kendall, you make me feel cherished and loved. The way you care for me and pay attention to the little details fills me with happiness. I'm grateful for our deep connection."
+    show kendall happy at truecenter
+    kendall "Jan, I wanted to make sure you felt warm and comfortable. Your well-being means everything to me."
+    hide kendall
+    show jan smile at truecenter
+    jan "Kendall, your thoughtfulness never fails to touch my heart. It's moments like these that remind me how lucky I am to have you in my life."
+    hide jan smile
+    show kendall affective smile at truecenter
+    kendall "Jan, being with you feels like home. You bring so much joy and warmth into my life. I can't imagine my days without you by my side."
+    hide kendall
+    show jan blushing at truecenter
+    jan "Kendall, you make me feel cherished and loved. The way you care for me and pay attention to the little details fills me with happiness. I'm grateful for our deep connection."
 
     #Consequence: (Scene: Kendall and Jan's relationship continues to flourish, 
     #filled with love, understanding, and mutual respect. 
