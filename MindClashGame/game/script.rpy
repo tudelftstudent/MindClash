@@ -1,10 +1,8 @@
-﻿
-default userinput = ""
-default persistent.textinput = ""
-#Define persistent values
+﻿# The script of the game goes in this file.
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
 init python:
-    
-    import json, uuid, smtplib
+    import json, uuid
     user_id = str(uuid.uuid4())
     
     def save_input(text:str, scenario:str, choice:str):
@@ -12,12 +10,6 @@ init python:
             data = {"Scenario":scenario, "text":text, "Choice":choice}
             json.dump(data,f)
 
-    server = smtplib.SMTP()
-    server.connect("smtp.gmail.com", 587)
-    server.ehlo()
-    server.starttls()
-    server.login("mindclashgame6@gmail.com", "thisismindclash")
-    fromaddr = 
 
 define text = Character("[text_input]")
 define participant = Character("[user_id]")
@@ -29,8 +21,7 @@ define jan = Character("Jan", image="jan")
 
 label start:
     scene bg city with dissolve
-    #$ persistent.input1 = "Now this has been changed"
-    #$ renpy.log("this is the testing messagedawdawdawdawd")
+    
     # The developer's beginning dialogue
     developer "Welcome, my friend."
     developer "You are invited, because we want you to make choices."
@@ -38,11 +29,6 @@ label start:
     developer "Your thought is crucial for us."
     developer "Now let's start it."
 
-    $persistent.textinput = renpy.input("write something")
-    $renpy.save_persistent()
-
-    #$ mp.save()
-    #$ persistent.input1 = renpy.input("Write something to change the persistent")
     menu:
         "Continue":
             jump cafe
@@ -90,7 +76,7 @@ label feeling_in_love:
             jump clean_her_home
 
 label angry:
-    kendall "(Kendall sits down, looking frustrated)"
+    kendall "(Kenadll sits down, looking frustrated)"
     kendall "Jan, we need to talk."
     jan "(concerned) What's wrong, Kendall? You seem upset."
     kendall "(angry) I can't help but feel angry about our relationship. It's getting serious, and I thought we were on the same page, but it feels like you're holding back."
@@ -221,7 +207,7 @@ label ending_4:
 
     kendall "(frustrated and detached) Jan, I thought I could find us a great home, but it's not working out as I hoped. I feel detached from the whole process."
     jan "(Supportive) Kendall, it's okay. Finding a home can be challenging, but we're in this together. Let's not get disheartened."
-    kendall " (reflective) Jan, I appreciate your understanding. I've realized that my navigation skills alone may not be enough. We should approach this as a team and seek professional guidance to find the perfect place."
+    kenadll " (reflective) Jan, I appreciate your understanding. I've realized that my navigation skills alone may not be enough. We should approach this as a team and seek professional guidance to find the perfect place."
 
     #(Scene: Kendall and Jan regroup, 
     #seeking assistance from a real estate agent. 
