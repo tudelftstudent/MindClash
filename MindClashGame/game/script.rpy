@@ -183,10 +183,14 @@ label ending_2:
 label ending_3:
     #(Scene: Kendall and Jan move into their new home.)
     scene bg villa inside with dissolve
+    
     "(Kendall and Jan move into their new home.)"
     $ renpy.pause()
+    show kendall excited at left
     kendall "(looking around with excitement) Jan, we did it! This place is perfect for us. I'm so glad I put our way of navigating into practice."
+    show jan beaming at right
     jan "(beaming) Kendall, I'm amazed at how you found this gem of a home. You truly have a knack for creating a beautiful and comfortable space."
+    show kendall accomplished at left
     kendall "(feeling loved and accomplished) Jan, your words mean the world to me. I wanted us to have a place we can truly call home, and seeing your happiness makes it all worthwhile."
     #Consequence: 
     #(Scene: Kendall and Jan settle into their new home, surrounded by love, warmth, 
@@ -204,9 +208,11 @@ label ending_3:
 label ending_4:
     #(Scene: Kendall and Jan struggle to find a suitable place to live.)
     scene bg city street with dissolve
-
+    show kendall frustrated at left
     kendall "(frustrated and detached) Jan, I thought I could find us a great home, but it's not working out as I hoped. I feel detached from the whole process."
+    show jan supportive at right
     jan "(Supportive) Kendall, it's okay. Finding a home can be challenging, but we're in this together. Let's not get disheartened."
+    show kendall concerned at left
     kenadll " (reflective) Jan, I appreciate your understanding. I've realized that my navigation skills alone may not be enough. We should approach this as a team and seek professional guidance to find the perfect place."
 
     #(Scene: Kendall and Jan regroup, 
