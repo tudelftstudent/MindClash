@@ -2,11 +2,17 @@
 errors listed below, and try again.
 
 
-The label angry is defined twice, at File "game/script.rpy", line 88:
-label angry:
-and File "game/script.rpy", line 114:
-label angry:
+File "game/script.rpy", line 140: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    zoom 1.9
+    ^
 
+File "game/script.rpy", line 146: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    zoom 1.6
+    ^
+
+File "game/script.rpy", line 158: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    zoom 1.6
+    ^
 
 Ren'Py Version: Ren'Py 8.1.0.23051307
-Sun Jun 11 23:48:58 2023
+Mon Jun 12 00:26:39 2023

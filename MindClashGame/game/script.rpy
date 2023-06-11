@@ -113,11 +113,16 @@ label angry:
 
 label jan_room:
 
-    scene janroom with move
-
+    scene bg room with move
+    show kendall softly at left:
+        zoom 1.6
+    show jan deep breath at right:
+        zoom 1.6
     "(Kendall enters Jan's room, noticing she is sleeping on her stomach.)"
     kendall "(softly) Jan looks so peaceful sleeping like that. I want to make sure she stays warm."
     "(Kendall tries to pull Jan's covers over her body)"
+    hide kendall softly
+    hide jan deep breath
 
     $ renpy.pause(1.0)
     "How would Jan feel about Kendall's action?"
@@ -128,16 +133,30 @@ label jan_room:
             jump ending_2
 
 label clean_her_home:
-    scene bg room with dissolve
+    scene bg messy room with dissolve
     "(Kendall decides to clean Jan's home while she is busy.)"
 
+    show kendall thinking at truecenter:
+        zoom 1.9
     kendall "(thinking to himself) Jan has been occupied lately, and I know she has a lot on her plate. I'll take this opportunity to clean her home and help lighten her load."
     "Kendall starts cleaning, tidying up the living room and organizing the kitchen."
+    hide kendall thinking
 
+    show kendall accomplished at truecenter:
+        zoom 1.6
     kendall "(focused on cleaning, muttering to himself) I want Jan to come back to a clean and cozy home. She deserves a relaxing space after her busy day."
+    hide kendall accomplished
+
+    show kendall thinking at truecenter:
+        zoom 1.9
     "(Kendall looks at the overflowing shelves and the small living room.)"
     kendall "I have to find a bigger home for us so we can live comfortably."
+    hide kendall thinking
 
+    scene bg villa outside with move
+    show kendall accomplished at truecenter:
+        zoom 1.6
+  
     "(Kendall finds a big villa that is suitable for both him and Jen)"
     "How will Kendall feel?"
     $ renpy.pause(1.0)
@@ -146,6 +165,8 @@ label clean_her_home:
             jump ending_3
         "Feeling Detached":
             jump ending_4
+
+
 
 
 
