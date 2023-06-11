@@ -20,8 +20,7 @@ define jan = Character("Jan", image="jan")
 # The game starts here.
 
 label start:
-    transform mag_size:
-        zoom 1.5
+
     scene bg room with dissolve
     show jan beaming at left
     # The developer's beginning dialogue
@@ -42,14 +41,11 @@ label cafe:
     
     scene bg cafe with dissolve
     
-    '''$ text_input = renpy.input("Testing:", copypaste = False) 
-    $ save_input(text_input, "Scenario_1", "Random Choice")'''
-   
-    #show jan beaming at truecenter
-    
-#     "Kendall and Jan are sitting in a cozy café, enjoying a cup of coffee together."
-    show kendall happy at truecenter
-    show jan beaming at right
+    "Kendall and Jan are sitting in a cozy café, enjoying a cup of coffee together."
+    show kendall happy at truecenter:
+        zoom 1.6
+    show jan beaming at right:
+        zoom 1.6
 
     kendall "Jan, these past few months have been incredible. I can't believe how much we've grown together. I think our relationship is getting really serious."
     jan "Kendall, I feel the same way. I've never connected with someone on such a deep level before. It's like we're meant to be."
@@ -66,16 +62,19 @@ label cafe:
 
 label feeling_in_love:
     scene bg cafe with dissolve
-    show kendall blush at left
+    show kendall blush at left:
+        zoom 1.6
     kendall "(blushing) Yes, Jan, I'm completely in love with you. You make me feel like the luckiest person in the world. I want to cherish every moment we spend together."
-    show jan smile at right
+    show jan smile at right:
+        zoom 1.6
     jan "(smiling warmly) Kendall, you have my heart too. Our love is something truly special, and I can't wait to see where it takes us."
     
     "(Kendall stands up to do the dishes while Jan goes into her room. Some time passes)"
 
     scene bg kitchen with move #(Scene: Kendall is in the kitchen, pondering his next move.)
 
-    show kendall thinking at truecenter
+    show kendall thinking at truecenter:
+        zoom 1.9
 
     kendall " (thinking) I wonder if Jan has found a date for the upcoming dance. I should go and talk to her about it."
 
@@ -88,21 +87,27 @@ label feeling_in_love:
 
 label angry:
     scene bg cafe with move
-    show kendall angry at truecenter
+    show kendall angry at truecenter:
+        zoom 1.9
     kendall "(Kendall sits down, looking frustrated)"
     kendall "Jan, we need to talk."
     hide kendall angry
-    show kendall angry at left
-    show jan concerned at right
+    show kendall angry at left:
+        zoom 1.6
+    show jan concerned at right:
+        zoom 1.6
     jan "(concerned) What's wrong, Kendall? You seem upset."
     kendall "(angry) I can't help but feel angry about our relationship. It's getting serious, and I thought we were on the same page, but it feels like you're holding back."
     hide jan concerned
-    show jan surprised at truecenter
+    show jan surprised at truecenter:
+        zoom 1.9
     jan "(surprised) Kendall, I'm sorry if it seems that way. I care about you deeply, but I might have some reservations."
     hide jan surprised
-    show kendall frustrated at truecenter
+    show kendall frustrated at truecenter:
+        zoom 1.6
     kendall "(frustrated) Reservations? After all this time together? What's holding you back?"
-    show jan deep breath at right
+    show jan deep breath at right:
+        zoom 1.6
     jan "(taking a deep breath) Kendall, it's not about you. I've been hurt in the past, and it's made it difficult for me to fully open up and trust someone again."
     "(Scene: Jan faints in Kendall's arms, causing concern and worry.)"
 

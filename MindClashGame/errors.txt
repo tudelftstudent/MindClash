@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 174: end of line expected.
-    scene bg wedding with dissolve at truecenter
-                                   ^
+The label angry is defined twice, at File "game/script.rpy", line 88:
+label angry:
+and File "game/script.rpy", line 114:
+label angry:
+
 
 Ren'Py Version: Ren'Py 8.1.0.23051307
-Thu Jun  8 20:02:22 2023
+Sun Jun 11 23:48:58 2023
