@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 174: end of line expected.
-    scene bg wedding with dissolve at truecenter
-                                   ^
+File "game/script.rpy", line 20: invalid syntax
+    fromaddr = 
 
 Ren'Py Version: Ren'Py 8.1.0.23051307
-Thu Jun  8 20:02:22 2023
+Sun Jun 11 22:42:06 2023
