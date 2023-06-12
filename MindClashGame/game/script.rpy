@@ -271,7 +271,7 @@ label ending_4:
     show jan supportive at right
     jan "(Supportive) Kendall, it's okay. Finding a home can be challenging, but we're in this together. Let's not get disheartened."
     show kendall concerned at left
-    kenadll " (reflective) Jan, I appreciate your understanding. I've realized that my navigation skills alone may not be enough. We should approach this as a team and seek professional guidance to find the perfect place."
+    kendall " (reflective) Jan, I appreciate your understanding. I've realized that my navigation skills alone may not be enough. We should approach this as a team and seek professional guidance to find the perfect place."
 
     #(Scene: Kendall and Jan regroup, 
     #seeking assistance from a real estate agent. 
@@ -286,19 +286,44 @@ label ending_4:
 
 label ending_5:
     scene bg house3 with dissolve
+    show kendall panic at truecenter:
+        zoom 1.6
     kendall "(panicked) Jan! Jan, wake up! Can you hear me?"
     $ renpy.pause(2.0)
+    show jan regain conscious at left:
+        zoom 1.6
     jan "(slowly regaining consciousness) What... happened?"
+    hide kendall
+    show kendall normal at right:
+        zoom 1.6
     kendall "(relieved) You fainted, Jan. I was so worried. Are you feeling better now?"
     $ renpy.pause(0.5)
     jan "(slowly regaining consciousness) What... happened?"
     kendall " (relieved) You fainted, Jan. I was so worried. Are you feeling better now?"
     $ renpy.pause(0.3)
+    hide jan
+    show jan weak at left:
+        zoom 1.6
     jan "(weakly) I think so. I'm sorry for causing you concern."
+    hide kendall
+    show kendall softly at right:
+        zoom 1.6
     kendall "(softly) Jan, I care deeply about you. Seeing you in distress worried me, and I wanted to make sure you were okay."
+    hide jan 
+    show jan weak smile at left: 
+        zoom 1.6
     jan "(smiling weakly) It means a lot to me, Kendall. Your kindness and support remind me that I have someone who genuinely cares about me."
+    hide kendall 
+    show kendall accomplished at right:
+        zoom 1.6
     kendall "(gently) You deserve to be cared for, Jan. I want to be the person who supports you and makes you feel loved."
+    hide jan
+    show jan happy blush at left:
+        zoom 1.6
     jan " (reflective) I've been guarded because of my past, but your actions and words show me that I can trust you. I want us to continue building our relationship."
+    hide kendall 
+    show kendall accomplished at right:
+        zoom 1.6
     kendall "(grateful) Jan, I'm here for you, and I want us to grow together. Let's work through any challenges that come our way and create a future filled with love and happiness."
 
     #Consequence: 
@@ -313,10 +338,23 @@ label ending_5:
 label ending_6:
     #(Scene: Jan's gratitude and appreciation for Kendall's actions deepen their connection.)
     scene bg house2 with dissolve
+    show jan blushing at right:
+        zoom 1.9
     jan "(softly) Kendall, I want you to know how much I appreciate what you did for me. Your care and kindness mean the world to me."
+    show kendall happy at left:
+        zoom 1.9
     kendall "(smiling) Jan, seeing you happy and feeling appreciated is all I could ask for. I'm here for you, through thick and thin."
+    hide jan blushing
+    show jan supportive at right:
+        zoom 1.9
     jan "(reflective) I never expected to find someone as caring and understanding as you, Kendall. You've shown me what it means to be loved and supported."
+    hide kendall happy
+    show kendall softly at left:
+        zoom 1.9
     kendall "(tenderly) Jan, you deserve nothing less than love and support. I want to be the one who provides that for you, now and in the future."
+    hide jan supportive
+    show jan happy blush at right:
+        zoom 1.9
     jan "(grateful) With you by my side, I feel like I can overcome any challenges that come our way. Together, we can create a beautiful and fulfilling relationship."
 
     #Consequence: 

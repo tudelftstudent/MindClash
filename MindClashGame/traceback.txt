@@ -1,27 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Haha\\AppData\\Roaming/RenPy/MindClashGame-1685730628\\persistent'
+  File "game/script.rpy", line 274, in script
+    kenadll " (reflective) Jan, I appreciate your understanding. I've realized that my navigation skills alone may not be enough. We should approach this as a team and seek professional guidance to find the perfect place."
+Exception: Sayer 'kenadll' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\main.py", line 684, in main
-    renpy.persistent.update(True)
-  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\persistent.py", line 401, in update
-    save()
-  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\persistent.py", line 419, in save
-    renpy.loadsave.location.save_persistent(compressed)
-  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\savelocation.py", line 545, in save_persistent
-    l.save_persistent(data)
-  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\savelocation.py", line 381, in save_persistent
-    self.persistent_mtime = os.path.getmtime(fn)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/genericpath.py", line 55, in getmtime
-FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\Haha\\AppData\\Roaming/RenPy/MindClashGame-1685730628\\persistent'
+  File "game/script.rpy", line 274, in script
+    kenadll " (reflective) Jan, I appreciate your understanding. I've realized that my navigation skills alone may not be enough. We should approach this as a team and seek professional guidance to find the perfect place."
+  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\Haha\Downloads\renpy-8.1.0-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'kenadll' is not defined.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.0.23051307
 MindClashGame 1.0
-Thu Jun  8 00:23:51 2023
+Mon Jun 12 09:41:05 2023
