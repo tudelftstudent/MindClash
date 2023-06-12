@@ -175,25 +175,32 @@ label ending_1: #Ending: Clean Her Home
     "Kendall leaves the room without disturbing Jan's sleep. However, unbeknownst to Kendall, Jan wakes up briefly and notices his presence."
 
     scene bg breakfast table with dissolve
-    show jan hesitate at truecenter
+    show jan hesitate at truecenter:
+        zoom 1.6
     jan "Kendall, can we talk about something?"
     hide jan
-    show kendall concerned at truecenter
+    show kendall concerned at truecenter:
+        zoom 1.6
     kendall "Of course, Jan. What's on your mind?"
     hide kendall
-    show jan hesitate at truecenter
+    show jan hesitate at truecenter:
+        zoom 1.6
     jan "Last night, when I woke up for a moment, I noticed you were in my room. I appreciate your intention to keep me warm, but it made me feel a bit ignored as if you didn't want to disturb me."
     hide jan
-    show kendall frustrated at truecenter
+    show kendall frustrated at truecenter:
+        zoom 1.6
     kendall "Jan, I'm so sorry if I gave you that impression. I truly didn't want to disrupt your sleep, thinking it would be better to let you rest peacefully. I never meant for you to feel ignored."
     hide kendall
-    show jan sad at truecenter
+    show jan sad at truecenter:
+        zoom 1.6
     jan "Kendall, it's not just about that one incident. Lately, I've been feeling like our connection has dissolved. We seem to have different priorities and our communication has suffered. I think it might be best if we go our separate ways."
     hide jan
-    show kendall concerned at truecenter
+    show kendall concerned at truecenter:
+        zoom 1.6
     kendall "Jan, I didn't realize you felt this way. I'm devastated to hear that you want to end our relationship, but I respect your decision."
     hide kendall
-    show jan tear eyed at truecenter
+    show jan tear eyed at truecenter:
+        zoom 1.6
     jan "Kendall, it's not an easy decision for me either. We had some beautiful moments together, but it feels like we've grown apart. It's time for both of us to find our own happiness."
     return 
 
@@ -206,16 +213,20 @@ label ending_2:
     #(Scene: Kendall and Jan spend quality time together, strengthening their bond.)
     scene bg warm home with dissolve
     "(Kendall and Jan spend quality time together, strengthening their bond.)"
-    show kendall happy at truecenter
+    show kendall happy at truecenter:
+        zoom 1.6
     kendall "Jan, I wanted to make sure you felt warm and comfortable. Your well-being means everything to me."
     hide kendall
-    show jan smile at truecenter
+    show jan smile at truecenter:
+        zoom 1.6
     jan "Kendall, your thoughtfulness never fails to touch my heart. It's moments like these that remind me how lucky I am to have you in my life."
     hide jan smile
-    show kendall affective smile at truecenter
+    show kendall affective smile at truecenter:
+        zoom 1.6
     kendall "Jan, being with you feels like home. You bring so much joy and warmth into my life. I can't imagine my days without you by my side."
     hide kendall
-    show jan blushing at truecenter
+    show jan blushing at truecenter:
+        zoom 1.6
     jan "Kendall, you make me feel cherished and loved. The way you care for me and pay attention to the little details fills me with happiness. I'm grateful for our deep connection."
 
     #Consequence: (Scene: Kendall and Jan's relationship continues to flourish, 
@@ -244,11 +255,14 @@ label ending_3:
     
     "(Kendall and Jan move into their new home.)"
     $ renpy.pause()
-    show kendall excited at left
+    show kendall excited at left:
+        zoom 1.6
     kendall "(looking around with excitement) Jan, we did it! This place is perfect for us. I'm so glad I put our way of navigating into practice."
-    show jan beaming at right
+    show jan beaming at right:
+        zoom 1.6
     jan "(beaming) Kendall, I'm amazed at how you found this gem of a home. You truly have a knack for creating a beautiful and comfortable space."
-    show kendall accomplished at left
+    show kendall accomplished at left:
+        zoom 1.6
     kendall "(feeling loved and accomplished) Jan, your words mean the world to me. I wanted us to have a place we can truly call home, and seeing your happiness makes it all worthwhile."
     #Consequence: 
     #(Scene: Kendall and Jan settle into their new home, surrounded by love, warmth, 
@@ -266,11 +280,14 @@ label ending_3:
 label ending_4:
     #(Scene: Kendall and Jan struggle to find a suitable place to live.)
     scene bg city street with dissolve
-    show kendall frustrated at left
+    show kendall frustrated at left:
+        zoom 1.6
     kendall "(frustrated and detached) Jan, I thought I could find us a great home, but it's not working out as I hoped. I feel detached from the whole process."
-    show jan supportive at right
+    show jan supportive at right:
+        zoom 1.6
     jan "(Supportive) Kendall, it's okay. Finding a home can be challenging, but we're in this together. Let's not get disheartened."
-    show kendall concerned at left
+    show kendall concerned at left:
+        zoom 1.6
     kendall " (reflective) Jan, I appreciate your understanding. I've realized that my navigation skills alone may not be enough. We should approach this as a team and seek professional guidance to find the perfect place."
 
     #(Scene: Kendall and Jan regroup, 
