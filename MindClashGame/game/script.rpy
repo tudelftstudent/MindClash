@@ -1,14 +1,14 @@
 ﻿# The script of the game goes in this file.
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-init python:
-    import json, uuid
-    user_id = str(uuid.uuid4())
+# init python:
+#     import json, uuid
+#     user_id = str(uuid.uuid4())
     
-    def save_input(text:str, scenario:str, choice:str):
-        with open(config.save_directory+"user_input.json", 'a+') as f:
-            data = {"Scenario":scenario, "text":text, "Choice":choice}
-            json.dump(data,f)
+#     def save_input(text:str, scenario:str, choice:str):
+#         with open(config.save_directory+"user_input.json", 'a+') as f:
+#             data = {"Scenario":scenario, "text":text, "Choice":choice}
+#             json.dump(data,f)
 
 
 define text = Character("[text_input]")
@@ -20,8 +20,8 @@ define jan = Character("Jan", image="jan")
 # The game starts here.
 
 label start:
-
     scene bg room with dissolve
+    play music "beginning.mp3" fadein 1.0 fadeout 1.0 volume 0.4
     show jan beaming at left
     # The developer's beginning dialogue
     developer "Welcome, my friend."
@@ -35,12 +35,12 @@ label start:
             jump cafe
 
 label cafe:
-    
+
     developer "Now the story begins. You are going to make choices for Kendall and Jan."
     $ renpy.pause() #Pause to create a gap
     
     scene bg cafe with dissolve
-    
+    play music "love0.mp3" fadein 0.5 fadeout 0.5 volume 0.4    
     "Kendall and Jan are sitting in a cozy café, enjoying a cup of coffee together."
     show kendall happy at truecenter:
         zoom 1.6
@@ -61,7 +61,9 @@ label cafe:
             jump angry
 
 label feeling_in_love:
+
     scene bg cafe with dissolve
+    play music "love0.mp3" if_changed
     show kendall blush at left:
         zoom 1.6
     kendall "(blushing) Yes, Jan, I'm completely in love with you. You make me feel like the luckiest person in the world. I want to cherish every moment we spend together."
@@ -87,6 +89,7 @@ label feeling_in_love:
 
 label angry:
     scene bg cafe with move
+    play music "sad0.mp3" fadeout 0.5 volume 0.4
     show kendall angry at truecenter:
         zoom 1.9
     kendall "(Kendall sits down, looking frustrated)"
@@ -114,6 +117,7 @@ label angry:
 label jan_room:
 
     scene bg room with move
+    play music "sad0.mp3" if_changed
     show kendall softly at left:
         zoom 1.6
     show jan deep breath at right:
@@ -134,6 +138,7 @@ label jan_room:
 
 label clean_her_home:
     scene bg messy room with dissolve
+    play music "life.mp3" fadein 0.5 fadeout 0.5 volume 0.4
     "(Kendall decides to clean Jan's home while she is busy.)"
 
     show kendall thinking at truecenter:
@@ -175,6 +180,7 @@ label ending_1: #Ending: Clean Her Home
     "Kendall leaves the room without disturbing Jan's sleep. However, unbeknownst to Kendall, Jan wakes up briefly and notices his presence."
 
     scene bg breakfast table with dissolve
+    play music "sad1.mp3" fadein 0.5 fadeout 0.5 volume 0.4
     show jan hesitate at truecenter:
         zoom 1.6
     jan "Kendall, can we talk about something?"
@@ -208,6 +214,7 @@ label ending_2:
     #(Scene: Kendall's act of pulling the covers over Jan reflects his care and love for her. 
     # Their relationship deepens as they continue to nurture their connection.)
     scene bg breakfast table with dissolve
+    play music "love1.mp3" fadein 0.5 fadeout 0.5 volume 0.4
     "(Kendall's act of pulling the covers over Jan reflects his care and love for her. Their relationship deepens as they continue to nurture their connection.)"
 
     #(Scene: Kendall and Jan spend quality time together, strengthening their bond.)
@@ -241,6 +248,7 @@ label ending_2:
     #They embark on a beautiful journey together, building a life filled with warmth, trust, 
     #and unwavering love.)
     scene bg wedding with dissolve
+    play music "love1.mp3" if_changed
     "Kendall and Jan celebrate their engagement, surrounded by love and the promise of a lifelong partnership.
     They embark on a beautiful journey together, building a life filled with warmth, trust, 
     #and unwavering love."
@@ -252,7 +260,7 @@ label ending_2:
 label ending_3:
     #(Scene: Kendall and Jan move into their new home.)
     scene bg villa inside with dissolve
-    
+    play music "love1.mp3" fadein 0.5 fadeout 0.5 volume 0.4
     "(Kendall and Jan move into their new home.)"
     $ renpy.pause()
     show kendall excited at left:
@@ -280,6 +288,7 @@ label ending_3:
 label ending_4:
     #(Scene: Kendall and Jan struggle to find a suitable place to live.)
     scene bg city street with dissolve
+    play music "depressed.mp3" fadein 0.5 fadeout 0.5 volume 0.4
     show kendall frustrated at left:
         zoom 1.6
     kendall "(frustrated and detached) Jan, I thought I could find us a great home, but it's not working out as I hoped. I feel detached from the whole process."
@@ -303,6 +312,7 @@ label ending_4:
 
 label ending_5:
     scene bg house3 with dissolve
+    play music "love2.mp3" fadein 0.5 fadeout 0.5 volume 0.4
     show kendall panic at truecenter:
         zoom 1.6
     kendall "(panicked) Jan! Jan, wake up! Can you hear me?"
@@ -355,6 +365,7 @@ label ending_5:
 label ending_6:
     #(Scene: Jan's gratitude and appreciation for Kendall's actions deepen their connection.)
     scene bg house2 with dissolve
+    play music "love2.mp3" fadein 0.5 fadeout 0.5 volume 0.4
     show jan blushing at right:
         zoom 1.9
     jan "(softly) Kendall, I want you to know how much I appreciate what you did for me. Your care and kindness mean the world to me."

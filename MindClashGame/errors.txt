@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 140: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    zoom 1.9
-    ^
-
-File "game/script.rpy", line 146: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    zoom 1.6
-    ^
-
-File "game/script.rpy", line 158: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    zoom 1.6
-    ^
+File "game/script.rpy", line 38: play requires a channel
+    play "love0.mp3" fadein 0.5 fadeout 0.5 volume 0.4
+         ^
 
 Ren'Py Version: Ren'Py 8.1.0.23051307
-Mon Jun 12 00:26:39 2023
+Mon Jun 12 11:22:07 2023
