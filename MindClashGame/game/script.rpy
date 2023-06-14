@@ -114,6 +114,12 @@ label angry:
     jan "(taking a deep breath) Kendall, it's not about you. I've been hurt in the past, and it's made it difficult for me to fully open up and trust someone again."
     "(Scene: Jan faints in Kendall's arms, causing concern and worry.)"
 
+    menu "What will Kendall do next?":
+        "Take Jan to the hospital":
+            jump ending_5
+        "Take Jan home":
+            jump ending_6
+
 label jan_room:
 
     scene bg room with move
