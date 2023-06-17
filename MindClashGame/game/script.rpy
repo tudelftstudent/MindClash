@@ -286,7 +286,7 @@ label ending_3:
     #creating lasting memories and a solid foundation for their future together. 
     #Kendall feels a deep sense of fulfillment, 
     #knowing they were able to provide a great place for their shared happiness to thrive.)
-
+    return 
 
 
 
@@ -312,7 +312,7 @@ label ending_4:
     #they eventually find a suitable home. 
     #Kendall learns the importance of relying on others and working together, 
     #leading to a stronger bond and a sense of shared responsibility in their journey.)
-
+    reutrn
 
 
 
@@ -366,7 +366,7 @@ label ending_5:
     #The experience strengthens their bond, 
     #allowing them to overcome Jan's past reservations and build a loving and trusting partnership.)
     
-
+    return
 
 
 label ending_6:
@@ -400,4 +400,4 @@ label ending_6:
     #allowing their love to grow and flourish. 
     #Kendall's dedication to Jan's happiness fosters a sense of security and happiness, 
     #making their relationship a source of joy and fulfillment for both of them.)
-
+    return
