@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 50: expected 'label_name' not found.
-    jump
-        ^
+File "game/script.rpy", line 162: multiple at clauses are prohibited.
+    show leader at surprised at truecenter
+                               ^
 
-File "game/script.rpy", line 61: choice menuitem expects a non-empty block.
-    "Confident":
-                ^
-
-Ren'Py Version: Ren'Py 8.1.1.23060707
-Sun Jun 18 11:52:41 2023
+Ren'Py Version: Ren'Py 8.1.0.23051307
+Sun Jun 18 13:19:19 2023
