@@ -69,6 +69,7 @@ label embarassed:
     scene football with dissolve
     show skylar embarassed at truecenter
     skylar "Hmmm.. Can I join you guys?"
+    hide skylar
     members "Well, the local soccer team is already full. Besides this, we don’t want to accept a new member who doesn't have a strong physique."
 
     "How would Skylar  feel as a result?"
@@ -80,10 +81,15 @@ label embarassed:
 
 label confident:
     scene football with dissolve
+    show skylar confident at truecenter
     skylar "I'm really skilled at soccer!"
+    hide skylar
+    show leader grinning at truecenter
     leader "That's great to hear! We actually need one more player. Are you up for showing us what you've got?"
+    hide leader
+    show skylar confident
     skylar "Absolutely! I'm ready to give it my all and show you my skills."
-
+    hide skylar
     "What would Skylar do next?"
     menu:
         "Feel elated for being accepted":
@@ -92,38 +98,73 @@ label confident:
             jump nervousnessE
 
 label acceptedE:
+    scene football with dissolve
+    show skylar excited at truecenter
     skylar "Thank you all for accepting me! I'm so thrilled to be a part of this team."
+    hide skylar
+    show leader smiling at truecenter
     leader "Welcome aboard, Skylar! We're glad to have you. Get ready to show us your skills in the upcoming practice sessions."
     return
 label nervousnessE:
+    scene football with dissolve
+    show skylar nervously at truecenter
     skylar "I hope I can live up to everyone's expectations. I'm feeling a bit anxious about showing my abilities."
+    hide skylar
+    show leader supportive at truecenter
     leader "Don't worry, Skylar. Just be yourself and play the way you know. We're here to support and help you improve. Give it your best shot."
     return
 
 label inferiorE:
     scene football with dissolve
+    show skylar tearing at truecenter
     skylar "Well...alright..."
+    hide skylar
     fade football
     scene girl_room with dissolve
+    show skylar tearing at truecenter
     skylar "I never thought they would say I'm not strong enough. Their words hurt..."
+    hide skylar
+    show friend sad-smile at truecenter
     friend "Hey, don't let their negativity get to you. You have an amazing talent for soccer, Skylar. It's their loss for not recognizing it."
+    hide friend
+    show skylar tearing at truecenter
     skylar "Do you really think I'm a good player?"
+    hide skylar
+    show friend smile at truecenter
     friend "Absolutely! You're the best soccer player I've ever seen. Come on, let's go out there and show them what you're made of."
+    hide friend
+    show skylar tear-grinning at truecenter
     skylar "Thank you! Your words mean a lot to me. Let's go play soccer and prove them wrong!"
     return
 
 label furiousE:
     scene football with dissolve
+    show skylar angry at truecenter
     skylar "What did you just say?"
+    hide skylar
+    show leader contemptuously at truecenter
     leader "I said you're not strong enough to join our team. This isn't the right place for you. Did I make myself clear?"
+    hide leader
+    show skylar angry-blush at truecenter
     skylar "You'll regret saying that. I'll show you just how strong I am."
+    hide skylar
     fade football
     scene street with dissolve
+    show skylar angry at truecenter
+    skylar "(angry)"
+    hide skylar
+    show leader contemptuously at truecenter
     leader "Oh, here comes the hot-headed player."
+    hide leader
+    show skylar angry at truecenter
     skylar "You think you can belittle me? Well, I'm not backing down. Let's settle this right here, right now."
+    hide skylar
+    show leader at surprised at truecenter
     leader "Are you challenging me to a fight?"
+    hide leader
+    show skylar determined at truecenter
     skylar "Yes, I am. I'll prove to you and everyone else that I'm stronger than you think."
-
+    hide skylar
     "The two engage in a physical confrontation, showcasing Skylar's resilience and determination. Eventually, Skylar's display of strength and skill impresses not only the team leader but also the onlookers, gaining the respect and recognition Skylar deserves."
     return
 
