@@ -54,8 +54,9 @@ label start:
 
 label practice:
     scene football with dissolve
-    skylar excited at truecenter 
+    show skylar excited at truecenter
     skylar "Hey guysss! I am Skylar and I would like to join the local soccer team!"
+    hide skylar
     members "(turn their head and stare at Skylar) ………"
 
     "How will Skylar feel next?"
@@ -66,6 +67,7 @@ label practice:
             jump confident
 label embarassed:
     scene football with dissolve
+    show skylar embarassed at truecenter
     skylar "Hmmm.. Can I join you guys?"
     members "Well, the local soccer team is already full. Besides this, we don’t want to accept a new member who doesn't have a strong physique."
 
@@ -77,7 +79,7 @@ label embarassed:
             jump furiousE
 
 label confident:
-
+    scene football with dissolve
     skylar "I'm really skilled at soccer!"
     leader "That's great to hear! We actually need one more player. Are you up for showing us what you've got?"
     skylar "Absolutely! I'm ready to give it my all and show you my skills."
@@ -129,9 +131,17 @@ label furiousE:
 
 
 label connect:
+    scene cafe with dissolve
+    show skylar excited at truecenter
     skylar "Hi there! My name is Skylar, and I'm really passionate about soccer. Can I join your local team?"
+    hide skylar
+    show leader smiling at truecenter
     leader "Of course! But before you join the team, there's something I need you to prepare for me."
+    hide leader
+    show skylar confused at truecenter
     skylar "What do you mean? What kind of things?"
+    hide skylar
+    show leader smiling
     leader "Well, I'm looking for some financial support or other personal advantages."
 
     "What will Skylar do next?"
@@ -142,10 +152,18 @@ label connect:
             jump angryE
 
 label surprisedE:
+    scene cafe with dissolve
+    show skylar surprised at truecenter
     skylar "I didn't expect this condition, but I'm really passionate about joining the team. I'll consider paying the money, although it feels unusual."
+    hide skylar
+    show leader satisfied at truecenter
     leader "Great decision, Skylar. Your commitment is appreciated. Welcome to the team!"
     return
 label angryE:
+    scene cafe with dissolve
+    show skylar determined at truecenter
     skylar "I won't tolerate this kind of behavior. It goes against fair play and the integrity of the game. I'm going to report you to the appropriate authorities."
+    hide skylar
+    show leader nervously at truecenter
     leader "You can't prove anything! Don't try to ruin my reputation. You're not welcome on this team anymore."
     return
