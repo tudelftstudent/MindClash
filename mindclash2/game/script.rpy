@@ -74,9 +74,9 @@ label embarassed:
 
     "How would Skylar  feel as a result?"
     menu:
-        "feel inferior"
+        "feel inferior":
             jump inferiorE
-        "furious"
+        "furious":
             jump furiousE
 
 label confident:
@@ -119,7 +119,7 @@ label inferiorE:
     show skylar tearing at truecenter
     skylar "Well...alright..."
     hide skylar
-    fade football
+    hide football
     scene girl_room with dissolve
     show skylar tearing at truecenter
     skylar "I never thought they would say I'm not strong enough. Their words hurt..."
@@ -148,7 +148,7 @@ label furiousE:
     show skylar angry-blush at truecenter
     skylar "You'll regret saying that. I'll show you just how strong I am."
     hide skylar
-    fade football
+    hide football
     scene street with dissolve
     show skylar angry at truecenter
     skylar "(angry)"
