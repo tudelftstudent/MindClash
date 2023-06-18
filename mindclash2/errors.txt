@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 162: multiple at clauses are prohibited.
-    show leader at surprised at truecenter
-                               ^
+File "game/script.rpy", line 58: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    play music "cheerful.mp3" if_changed
+    ^
 
 Ren'Py Version: Ren'Py 8.1.0.23051307
-Sun Jun 18 13:19:19 2023
+Sun Jun 18 17:52:34 2023

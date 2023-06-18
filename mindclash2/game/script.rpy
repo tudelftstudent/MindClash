@@ -39,6 +39,7 @@ define members = Character("Team members")
 
 label start:
     scene girl_room with dissolve
+    play music "cheerful.mp3" fadein 0.4 fadeout 0.4 volume 0.3
     show skylar grinning at truecenter
     skylar "I really like sports, sports make me relax. but playing alone is kind of boring."
     hide skylar grinning at truecenter
@@ -54,6 +55,7 @@ label start:
 
 label practice:
     scene football with dissolve
+    play music "cheerful.mp3" if_changed
     show skylar excited at truecenter
     skylar "Hey guysss! I am Skylar and I would like to join the local soccer team!"
     hide skylar
@@ -67,6 +69,7 @@ label practice:
             jump confident
 label embarassed:
     scene football with dissolve
+    play music "tense.mp3" fadein 0.4 fadeout 0.4 volume 0.3
     show skylar embarassed at truecenter
     skylar "Hmmm.. Can I join you guys?"
     hide skylar
@@ -81,6 +84,7 @@ label embarassed:
 
 label confident:
     scene football with dissolve
+    play music "cheerful.mp3" if_changed
     show skylar confident at truecenter
     skylar "I'm really skilled at soccer!"
     hide skylar
@@ -99,6 +103,7 @@ label confident:
 
 label acceptedE:
     scene football with dissolve
+    play music "cheerful.mp3" if_changed
     show skylar excited at truecenter
     skylar "Thank you all for accepting me! I'm so thrilled to be a part of this team."
     hide skylar
@@ -107,6 +112,7 @@ label acceptedE:
     return
 label nervousnessE:
     scene football with dissolve
+    play music "nervous.mp3" fadein 0.4 fadeout 0.4 volume 0.3
     show skylar nervously at truecenter
     skylar "I hope I can live up to everyone's expectations. I'm feeling a bit anxious about showing my abilities."
     hide skylar
@@ -116,6 +122,7 @@ label nervousnessE:
 
 label inferiorE:
     scene football with dissolve
+    play music "sad.mp3" fadein 0.4 fadeout 0.4 volume 0.3
     show skylar tearing at truecenter
     skylar "Well...alright..."
     hide skylar
@@ -139,6 +146,7 @@ label inferiorE:
 
 label furiousE:
     scene football with dissolve
+    play music "sad2.mp3" fadein 0.4 fadeout 0.4 volume 0.3
     show skylar angry at truecenter
     skylar "What did you just say?"
     hide skylar
@@ -173,6 +181,7 @@ label furiousE:
 
 label connect:
     scene cafe with dissolve
+    play music "modern.mp3" fadein 0.4 fadeout 0.4 volume 0.3
     show skylar excited at truecenter
     skylar "Hi there! My name is Skylar, and I'm really passionate about soccer. Can I join your local team?"
     hide skylar
@@ -194,6 +203,7 @@ label connect:
 
 label surprisedE:
     scene cafe with dissolve
+    play music "sad3.mp3" fadein 0.4 fadeout 0.4 volume 0.3
     show skylar surprised at truecenter
     skylar "I didn't expect this condition, but I'm really passionate about joining the team. I'll consider paying the money, although it feels unusual."
     hide skylar
@@ -202,6 +212,7 @@ label surprisedE:
     return
 label angryE:
     scene cafe with dissolve
+    play music "sad3.mp3" fadein 0.4 fadeout 0.4 volume 0.3
     show skylar determined at truecenter
     skylar "I won't tolerate this kind of behavior. It goes against fair play and the integrity of the game. I'm going to report you to the appropriate authorities."
     hide skylar

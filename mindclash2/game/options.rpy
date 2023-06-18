@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("mindclash2")
+define config.name = _("MindClash Story V2")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
