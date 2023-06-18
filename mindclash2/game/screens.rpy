@@ -381,7 +381,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/football.png"
+    background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
