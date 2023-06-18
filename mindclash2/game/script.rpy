@@ -159,7 +159,7 @@ label furiousE:
     show skylar angry at truecenter
     skylar "You think you can belittle me? Well, I'm not backing down. Let's settle this right here, right now."
     hide skylar
-    show leader at surprised at truecenter
+    show leader surprised at truecenter
     leader "Are you challenging me to a fight?"
     hide leader
     show skylar determined at truecenter
