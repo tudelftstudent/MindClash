@@ -312,7 +312,7 @@ label ending_4:
     #they eventually find a suitable home. 
     #Kendall learns the importance of relying on others and working together, 
     #leading to a stronger bond and a sense of shared responsibility in their journey.)
-    reutrn
+    return
 
 
 
