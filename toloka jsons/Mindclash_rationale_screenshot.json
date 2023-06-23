@@ -1,0 +1,486 @@
+{
+  "view": {
+    "type": "view.list",
+    "items": [
+      {
+        "type": "view.link",
+        "label": "Are you ready? Click to enter Mindclash game!",
+        "url": "https://zoe4123190.itch.io/mindclash?secret=7t4kQyXykzrA8fx7pVeDMLoUZ5w",
+        "validation": {
+          "type": "condition.link-opened",
+          "url": "https://zoe4123190.itch.io/mindclash?secret=7t4kQyXykzrA8fx7pVeDMLoUZ5w"
+        }
+      },
+      {
+        "type": "view.text",
+        "content": "Before submitting my answers, I promise not to accept undeserved assistance and to abide by the aforementioned rules of the game.",
+        "label": "Declaration"
+      },
+      {
+        "type": "view.group",
+        "label": "Block 1",
+        "content": {
+          "type": "view.list",
+          "items": [
+            {
+              "type": "field.radio-group",
+              "label": "How would Kendall feel about this?",
+              "options": [
+                {
+                  "label": "Feeling in love",
+                  "value": "in_love"
+                },
+                {
+                  "label": "Angry",
+                  "value": "Angry"
+                }
+              ],
+              "data": {
+                "type": "data.output",
+                "path": "answer"
+              },
+              "validation": {
+                "type": "condition.required"
+              }
+            },
+            {
+              "type": "field.textarea",
+              "label": "Why did you choose this option? ",
+              "placeholder": "Because...",
+              "data": {
+                "type": "data.output",
+                "path": "rationale_1_original"
+              },
+              "validation": {
+                "type": "condition.required"
+              }
+            },
+            {
+              "type": "view.text",
+              "content": "A) Feeling in love \n- Positive emotions, growth, and deep connection indicate a strong romantic bond. \n\nB) Angry \n- No indication of anger in the conversation; positive sentiments and expressions of affection suggest love.",
+              "label": "✿ Perspective from AI ✿ "
+            },
+            {
+              "type": "field.radio-group",
+              "data": {
+                "type": "data.output",
+                "path": "agree_with_ai_1"
+              },
+              "label": "Why did you agree/disagree with AI rationale?",
+              "options": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "Not really",
+                  "value": "no"
+                }
+              ],
+              "validation": {
+                "type": "condition.required"
+              }
+            },
+            {
+              "type": "field.textarea",
+              "label": "Can you type your rationale?",
+              "placeholder": "Because...",
+              "data": {
+                "type": "data.output",
+                "path": "rationale_1"
+              },
+              "validation": {
+                "type": "condition.required"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "helper.if",
+        "condition": {
+          "type": "condition.equals",
+          "data": {
+            "type": "data.output",
+            "path": "answer"
+          },
+          "to": "Angry"
+        },
+        "then": {
+          "type": "view.group",
+          "label": "Block 2",
+          "content": {
+            "type": "view.list",
+            "items": [
+              {
+                "type": "field.radio-group",
+                "label": "What will happen to Jan?",
+                "options": [
+                  {
+                    "label": "Take Jan to the hospital",
+                    "value": "Jan hospital"
+                  },
+                  {
+                    "label": "Take Jan home",
+                    "value": "Jan_home"
+                  }
+                ],
+                "data": {
+                  "type": "data.output",
+                  "path": "answer_Angry"
+                },
+                "validation": {
+                  "type": "condition.required"
+                }
+              },
+              {
+              "type": "field.textarea",
+              "label": "Why did you choose this option? ",
+              "placeholder": "Because...",
+              "data": {
+                "type": "data.output",
+                "path": "rationale_2_original"
+              },
+              "validation": {
+                "type": "condition.required"
+              }
+              },
+              {
+              "type": "view.text",
+              "content": "A) Take Jan to the hospital \n- Jan fainting indicates a potential medical issue that requires professional evaluation and care. \n\nB) Take Jan home \n- Assuming Jan's fainting is not severe, taking them home allows for a familiar and comfortable environment to rest and recover.",
+              "label": "✿ Perspective from AI ✿ "
+              },
+              {
+                "type": "field.radio-group",
+                "data": {
+                  "type": "data.output",
+                  "path": "agree_with_ai_2"
+                },
+                "label": "Why did you agree/disagree with AI rationale?",
+                "options": [
+                  {
+                    "label": "Yes",
+                    "value": "Yes"
+                  },
+                  {
+                    "label": "Not really",
+                    "value": "no"
+                  }
+                ],
+                "validation": {
+                  "type": "condition.required"
+                }
+              },
+              {
+                "type": "field.textarea",
+                "label": "Can you type your rationale?",
+                "placeholder": "Because...",
+                "data": {
+                  "type": "data.output",
+                  "path": "rationale_2"
+                },
+                "validation": {
+                  "type": "condition.required"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "helper.if",
+        "condition": {
+          "type": "condition.equals",
+          "data": {
+            "type": "data.output",
+            "path": "answer"
+          },
+          "to": "in_love"
+        },
+        "then": {
+          "type": "view.group",
+          "label": "Block 3",
+          "content": {
+            "type": "view.list",
+            "items": [
+              {
+                "type": "field.radio-group",
+                "label": "What will Kendall want to do next?",
+                "options": [
+                  {
+                    "label": "Talk to Jan",
+                    "value": "talk_to_Jan"
+                  },
+                  {
+                    "label": "Clean her home",
+                    "value": "clean_home"
+                  }
+                ],
+                "data": {
+                  "type": "data.output",
+                  "path": "answer_in_love"
+                },
+                "validation": {
+                  "type": "condition.required"
+                }
+              },
+              {
+              "type": "field.textarea",
+              "label": "Why did you choose this option? ",
+              "placeholder": "Because...",
+              "data": {
+                "type": "data.output",
+                "path": "rationale_3_original"
+              },
+              "validation": {
+                "type": "condition.required"
+              }
+              },
+              {
+              "type": "view.text",
+              "content": "A) Talk to Jan \n- Kendall's thoughts indicate a desire to have a conversation with Jan, possibly about the upcoming dance and wanting to know if Jan has found a date.\n\nB) Clean her home \n- There is no indication or connection between Kendall's thoughts and the need to clean Jan's home. The focus is on wanting to talk to Jan, not engage in cleaning activities.",
+              "label": "✿ Perspective from AI ✿ "
+              },
+              {
+                "type": "field.radio-group",
+                "data": {
+                  "type": "data.output",
+                  "path": "agree_with_ai_3"
+                },
+                "label": "Why did you agree/disagree with AI rationale?",
+                "options": [
+                  {
+                    "label": "Yes",
+                    "value": "Yes"
+                  },
+                  {
+                    "label": "Not really",
+                    "value": "no"
+                  }
+                ],
+                "validation": {
+                  "type": "condition.required"
+                }
+              },
+              {
+                "type": "field.textarea",
+                "label": "Can you type your rationale?",
+                "placeholder": "Because...",
+                "data": {
+                  "type": "data.output",
+                  "path": "rationale_3"
+                },
+                "validation": {
+                  "type": "condition.required"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "helper.if",
+        "condition": {
+          "type": "condition.equals",
+          "data": {
+            "type": "data.output",
+            "path": "answer_in_love"
+          },
+          "to": "talk_to_Jan"
+        },
+        "then": {
+          "type": "view.group",
+          "label": "Block 4",
+          "content": {
+            "type": "view.list",
+            "items": [
+              {
+                "type": "field.radio-group",
+                "label": "How would Jan feel as a result?",
+                "options": [
+                  {
+                    "label": "Being ignored",
+                    "value": "Being ignored"
+                  },
+                  {
+                    "label": "Being loved",
+                    "value": "Being loved"
+                  }
+                ],
+                "data": {
+                  "type": "data.output",
+                  "path": "Jan_feel"
+                },
+                "validation": {
+                  "type": "condition.required"
+                }
+              },
+              {
+              "type": "field.textarea",
+              "label": "Why did you choose this option? ",
+              "placeholder": "Because...",
+              "data": {
+                "type": "data.output",
+                "path": "rationale_4_original"
+              },
+              "validation": {
+                "type": "condition.required"
+              }
+              },
+              {
+              "type": "view.text",
+              "content": "A) Being ignored \n- Kendall's actions of trying to cover Jan with blankets may disturb her sleep, potentially making her feel ignored or bothered.\n\nB) Being loved \n- Kendall's actions of trying to make sure Jan stays warm indicate care and affection, suggesting love and concern for Jan's well-being while she sleeps.",
+              "label": "✿ Perspective from AI ✿ "
+              },
+              {
+                "type": "field.radio-group",
+                "data": {
+                  "type": "data.output",
+                  "path": "agree_with_ai_4"
+                },
+                "label": "Why did you agree/disagree with AI rationale?",
+                "options": [
+                  {
+                    "label": "Yes",
+                    "value": "Yes"
+                  },
+                  {
+                    "label": "Not really",
+                    "value": "no"
+                  }
+                ],
+                "validation": {
+                  "type": "condition.required"
+                }
+              },
+              {
+                "type": "field.textarea",
+                "label": "Can you type your rationale?",
+                "placeholder": "Because...",
+                "data": {
+                  "type": "data.output",
+                  "path": "rationale_4"
+                },
+                "validation": {
+                  "type": "condition.required"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "helper.if",
+        "condition": {
+          "type": "condition.equals",
+          "data": {
+            "type": "data.output",
+            "path": "answer_in_love"
+          },
+          "to": "clean_home"
+        },
+        "then": {
+          "type": "view.group",
+          "label": "Block 5",
+          "content": {
+            "type": "view.list",
+            "items": [
+              {
+                "type": "field.radio-group",
+                "label": "How will Kendall feel?",
+                "options": [
+                  {
+                    "label": "Being loved",
+                    "value": "love_2"
+                  },
+                  {
+                    "label": "Feeling detached",
+                    "value": "Feeling detached"
+                  }
+                ],
+                "data": {
+                  "type": "data.output",
+                  "path": "kendall_feel"
+                },
+                "validation": {
+                  "type": "condition.required"
+                }
+              },
+              {
+              "type": "field.textarea",
+              "label": "Why did you choose this option? ",
+              "placeholder": "Because...",
+              "data": {
+                "type": "data.output",
+                "path": "rationale_5_original"
+              },
+              "validation": {
+                "type": "condition.required"
+              }
+              },
+              {
+              "type": "view.text",
+              "content": "A) Being loved \n- Kendall's actions of cleaning Jan's home and wanting to create a cozy space for her demonstrate care and love.\n\nB) Feeling detached \n- There is no indication of detachment in the scenario; Kendall's thoughts and actions show a strong emotional connection and consideration for Jan's well-being.",
+              "label": "✿ Perspective from AI ✿ "
+              },
+              {
+                "type": "field.radio-group",
+                "data": {
+                  "type": "data.output",
+                  "path": "agree_with_ai_5"
+                },
+                "label": "Why did you agree/disagree with AI rationale?",
+                "options": [
+                  {
+                    "label": "Yes",
+                    "value": "Yes"
+                  },
+                  {
+                    "label": "Not really",
+                    "value": "no"
+                  }
+                ],
+                "validation": {
+                  "type": "condition.required"
+                }
+              },
+              {
+                "type": "field.textarea",
+                "label": "Can you type your rationale?",
+                "placeholder": "Because...",
+                "data": {
+                  "type": "data.output",
+                  "path": "rationale_5"
+                },
+                "validation": {
+                  "type": "condition.required"
+                }
+              }
+            ]
+          }
+        }
+      },{
+          "type": "view.list",
+          "items": [
+            {
+              "type": "field.file",
+              "label": "Please provide your last screenshot of the end of game.\nThank you!",
+              "data": {
+                "type": "data.output",
+                "path": "last_page_screenshot"
+              }
+            }
+          ]
+        }
+    ]
+  },
+  "plugins": [
+    {
+      "type": "plugin.toloka",
+      "layout": {
+        "kind": "scroll",
+        "taskWidth": 400
+      }
+    }
+  ]
+}
